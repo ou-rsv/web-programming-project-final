@@ -1,0 +1,151 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  color: #222;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Header */
+.header {
+  background: #0f172a;
+  color: white;
+  padding: 16px 0;
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  margin: 0;
+  font-size: 26px;
+}
+
+/* Hero */
+.hero {
+  padding: 110px 0;
+  background: linear-gradient(135deg, #111827, #1f2933);
+  color: white;
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 44px;
+  margin-bottom: 16px;
+}
+
+/* Sections */
+section {
+  padding: 70px 0;
+}
+
+section h3 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 32px;
+}
+
+/* Categories */
+.category-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.category-card {
+  background: #f1f5f9;
+  padding: 30px;
+  border-radius: 14px;
+  text-align: center;
+  font-weight: 600;
+}
+
+/* Advantages */
+.adv-cards {
+  display: flex;
+  gap: 20px;
+}
+
+.adv-card {
+  flex: 1;
+  background: #f8fafc;
+  padding: 30px;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+}
+
+/* About & Contacts */
+.about,
+.contacts {
+  background: #f1f5f9;
+}
+
+.about p,
+.contacts p {
+  max-width: 750px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Footer */
+.footer {
+  background: #0f172a;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+/* Buttons */
+.btn-primary {
+  background: #dc2626;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* Modal */
+.modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+}
+
+.modal-content {
+  background: white;
+  max-width: 420px;
+  margin: 120px auto;
+  padding: 28px;
+  border-radius: 16px;
+  position: relative;
+}
+
+.modal-content input,
+.modal-content textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
+}
+
+.close-btn {
+  position: absolute;
+  right: 14px;
+  top: 14px;
+  font-size: 20px;
+  cursor: pointer;
+}
