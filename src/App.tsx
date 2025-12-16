@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
-export const App = () => {
-  const [isModalOpen, setIsModalOpen] = useState(false);
+export const App: React.FC = () => {
+  const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
 
   return (
     <>
