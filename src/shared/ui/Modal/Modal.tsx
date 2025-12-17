@@ -7,10 +7,7 @@ type ModalProps = {
 export const Modal: React.FC<ModalProps> = ({ onClose }) => {
   return (
     <div className="modal" onClick={onClose}>
-      <div
-        className="modal-content"
-        onClick={(e) => e.stopPropagation()}
-      >
+      <div className="modal-content" onClick={(e) => e.stopPropagation()}>
         <span className="close-btn" onClick={onClose}>
           &times;
         </span>

@@ -10,10 +10,7 @@ export const HomePage: React.FC = () => {
       <header className="header">
         <div className="container">
           <h1 className="logo">FIT-car</h1>
-          <button
-            className="btn-primary"
-            onClick={() => setIsModalOpen(true)}
-          >
+          <button className="btn-primary" onClick={() => setIsModalOpen(true)}>
             Связаться с нами
           </button>
         </div>
@@ -97,9 +94,7 @@ export const HomePage: React.FC = () => {
       </footer>
 
       {/* Modal */}
-      {isModalOpen && (
-        <Modal onClose={() => setIsModalOpen(false)} />
-      )}
+      {isModalOpen && <Modal onClose={() => setIsModalOpen(false)} />}
     </>
   );
 };
