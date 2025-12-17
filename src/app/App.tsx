@@ -1,3 +1,4 @@
+const unusedVar = 123;
 import React from 'react';
 import { HomePage } from '../pages/HomePage/HomePage';
 
