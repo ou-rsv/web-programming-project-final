@@ -76,3 +76,8 @@
 - Добавлена команда `npm run format`
 
 
+## Этап 10. Husky + lint-staged
+
+- Установлен Husky для работы с git hooks
+- Настроен pre-commit хук
+- Добавлен lint-staged для проверки только изменённых файлов
